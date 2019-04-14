@@ -4,7 +4,7 @@ public final class SafeThreadSingleton {
 		
 	}
 	
-	final static SafeThreadSingleton getInstance() {
+	public final static SafeThreadSingleton getInstance() {
 		return ImplicitInstanceHolder.getInstance();
 	}
 	
