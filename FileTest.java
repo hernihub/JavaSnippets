@@ -10,8 +10,9 @@ import java.util.stream.Stream;
 import org.junit.Test;
 
 public class FileTest {
+	// Open a file from the resources folder inside a Maven project - Java 8
 	@Test
-	public void openFileInMemory() {
+	public void openFileFromResourceFolderInMemory() {
 	    String expectedData = "Hello World from fileTest.txt!!!";
 	    String data = null;
 	    
@@ -32,6 +33,7 @@ public class FileTest {
 		}
 	}
 	
+	// Open a file from a path by streaming - Java 8
 	@Test
 	public void streamFromBigFile(String path) {
 		Scanner sc = null;
